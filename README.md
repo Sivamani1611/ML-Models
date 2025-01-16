@@ -1,4 +1,4 @@
-# ML-Models
+# Mathematics-Driven Machine Learning
 
 This repository is dedicated to implementing various machine learning models from scratch using Python. The purpose of this repository is to provide educational resources and practical examples for understanding machine learning algorithms at a fundamental level, with a focus on gaining deeper insights into their mathematical foundations and practical usage.
 
