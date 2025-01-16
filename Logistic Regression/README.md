@@ -22,9 +22,9 @@ $$
 $$
 
 Where:
-- \( \hat{y} \) is the predicted probability of the positive class.
-- \( z \) is the linear combination of inputs and weights.
-- \( \sigma(z) \) is the sigmoid function.
+- `ŷ` is the predicted probability of the positive class.
+- `z` is the linear combination of inputs and weights.
+- `σ(z)` is the sigmoid function.
 
 ### 2. Cost Function: Binary Cross-Entropy Loss
 The cost function used in logistic regression is the Binary Cross-Entropy Loss:
@@ -34,9 +34,9 @@ J(\beta) = -\frac{1}{n} \sum_{i=1}^{n} \left[y_i \log(\hat{y}_i) + (1 - y_i) \lo
 $$
 
 Where:
-- \( n \) is the number of data points.
-- \( y_i \) is the true label (0 or 1).
-- \( \hat{y}_i \) is the predicted probability for the positive class.
+- `n` is the number of data points.
+- `yᵢ` is the true label (0 or 1).
+- `ŷᵢ` is the predicted probability for the positive class.
 
 ### 3. Gradient Descent Update Rule
 The gradient descent algorithm updates the parameters \( \beta_0 \) and \( \beta_1 \) iteratively to minimize the cost function. The update rules are as follows:
@@ -50,9 +50,9 @@ $$
 $$
 
 Where:
-- \( \eta \) is the learning rate.
-- \( \beta_0 \) and \( \beta_1 \) are the model parameters (bias and weight).
-- \( X_i \) is the value of the feature for the \( i^{th} \) data point.
+- `η` is the **learning rate**.
+- `β₀` and `β₁` are the model parameters (bias and weight).
+- `Xᵢ` is the value of the feature for the `i-th` data point.
 
 ## Script Workflow
 
