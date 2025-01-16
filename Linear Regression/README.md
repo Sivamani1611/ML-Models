@@ -4,8 +4,8 @@ This repository implements a simple **Linear Regression** model from scratch usi
 
 ## Overview
 
-- **Linear Regression**: A statistical method for modeling the relationship between a dependent variable (`y`) and one (or more) independent variable(s) (`X`). In this case, we use a single feature (`X`).
-- **Gradient Descent**: An iterative optimization algorithm used to minimize the cost function (Mean Squared Error, MSE in this case) by adjusting model parameters (intercept and slope) in the direction that reduces the error.
+- **Linear Regression**: A statistical method for modeling the relationship between a dependent variable (`y`) and an independent variable (`X`).
+- **Gradient Descent**: An iterative optimization algorithm used to minimize the cost function (Mean Squared Error, MSE in this case) by adjusting model parameters (intercept and slope).
 - **Mean Squared Error (MSE)**: A common cost function used for regression problems. It measures the average squared difference between the predicted and actual values.
 
 ## Mathematical Formulas
@@ -13,9 +13,9 @@ This repository implements a simple **Linear Regression** model from scratch usi
 ### 1. Linear Regression Model
 The linear regression model assumes the relationship between the independent variable (`X`) and dependent variable (`y`) can be described by a linear equation:
 
-\[
+$$
 y = \beta_0 + \beta_1 \cdot X
-\]
+$$
 
 Where:
 - \( y \) is the predicted value.
@@ -26,9 +26,9 @@ Where:
 ### 2. Cost Function: Mean Squared Error (MSE)
 The cost function used in this implementation is the Mean Squared Error (MSE), which calculates the average squared difference between the true values (`y`) and the predicted values (`y_pred`):
 
-\[
+$$
 MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - y_{\text{pred}_i})^2
-\]
+$$
 
 Where:
 - \( n \) is the number of data points.
@@ -38,13 +38,13 @@ Where:
 ### 3. Gradient Descent Update Rule
 The gradient descent algorithm updates the parameters \( \beta_0 \) and \( \beta_1 \) iteratively to minimize the cost function. The update rules are as follows:
 
-\[
+$$
 \beta_0 = \beta_0 - \eta \cdot \frac{1}{n} \sum_{i=1}^{n} (y_i - y_{\text{pred}_i})
-\]
+$$
 
-\[
+$$
 \beta_1 = \beta_1 - \eta \cdot \frac{1}{n} \sum_{i=1}^{n} (y_i - y_{\text{pred}_i}) \cdot X_i
-\]
+$$
 
 Where:
 - \( \eta \) is the learning rate.
@@ -55,16 +55,16 @@ Where:
 
 1. **Data Generation**:
    - The script generates a synthetic dataset using `make_regression` from scikit-learn with 100 samples and 1 feature, and noise is added to make the data more realistic.
-   
+
 2. **Initialize Parameters**:
    - The model parameters \( \beta_0 \) (intercept) and \( \beta_1 \) (slope) are initialized to zero and one, respectively.
 
 3. **Prediction**:
    - The `predict` function calculates the predicted values of `y` using the formula:
-     \[
+     $$
      y_{\text{pred}} = \beta_0 + \beta_1 \cdot X
-     \]
-   
+     $$
+
 4. **Cost Function**:
    - The `compute_cost` function calculates the Mean Squared Error (MSE) between the actual values `y` and the predicted values `y_pred`.
 
@@ -99,5 +99,4 @@ Optimized Learning Rate: 0.1000
 Trained Coefficients:
  beta_0 (Intercept) = 1.1651
  beta_1 (Slope) = 44.4372
-
 ```
