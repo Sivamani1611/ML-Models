@@ -28,12 +28,12 @@ Each model is organized into its own folder, which includes:
 1. **Linear Regression**
     - **Description**: Demonstrates the implementation of Linear Regression using gradient descent. Includes mathematical formulas and visualizations.
     - **Folder**: `LinearRegression`
-    - **Documentation**: [Linear Regression README](./LinearRegression/README.md)
+    - **Documentation**: [Linear Regression README](./Linear Regression/README.md)
 
 2. **Logistic Regression**
     - **Description**: Implements Logistic Regression for binary classification, including the sigmoid function and loss computation.
     - **Folder**: `LogisticRegression`
-    - **Documentation**: [Logistic Regression README](./LogisticRegression/README.md)
+    - **Documentation**: [Logistic Regression README](./Logistic Regression/README.md)
 
 3. **Upcoming Models**
     - Additional models such as Decision Trees, K-Nearest Neighbors, and Support Vector Machines will be added, each with its folder and documentation.
