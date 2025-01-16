@@ -18,10 +18,10 @@ y = \beta_0 + \beta_1 \cdot X
 $$
 
 Where:
-- \( y \) is the predicted value.
-- (\beta_0)  is the intercept (bias term).
-- \( \beta_1 \) is the slope (coefficient for the feature).
-- \( X \) is the input feature.
+- `y` is the predicted value.
+- `β₀` is the intercept (bias term).
+- `β₁` is the slope (coefficient for the feature).
+- `X` is the input feature.
 
 ### 2. Cost Function: Mean Squared Error (MSE)
 The cost function used in this implementation is the Mean Squared Error (MSE), which calculates the average squared difference between the true values (`y`) and the predicted values (`y_pred`):
@@ -31,9 +31,10 @@ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - y_{\text{pred}_i})^2
 $$
 
 Where:
-- \( n \) is the number of data points.
-- \( y_i \) is the actual value.
-- \( y_{\text{pred}_i} \) is the predicted value.
+Where:
+- `n` is the number of data points.
+- `yᵢ` is the actual value.
+- `y_predᵢ` is the predicted value.
 
 ### 3. Gradient Descent Update Rule
 The gradient descent algorithm updates the parameters \( \beta_0 \) and \( \beta_1 \) iteratively to minimize the cost function. The update rules are as follows:
@@ -47,9 +48,9 @@ $$
 $$
 
 Where:
-- \( \eta \) is the learning rate.
-- \( \beta_0 \) and \( \beta_1 \) are the model parameters (intercept and slope).
-- \( X_i \) is the value of the feature for the \( i^{th} \) data point.
+- `η` is the **learning rate**.
+- `β₀` and `β₁` are the model parameters (intercept and slope).
+- `Xᵢ` is the value of the feature for the `i-th` data point.
 
 ## Script Workflow
 
