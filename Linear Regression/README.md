@@ -19,7 +19,7 @@ $$
 
 Where:
 - \( y \) is the predicted value.
-- \beta_0  is the intercept (bias term).
+- (\beta_0)  is the intercept (bias term).
 - \( \beta_1 \) is the slope (coefficient for the feature).
 - \( X \) is the input feature.
 
