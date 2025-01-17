@@ -85,4 +85,4 @@ The generated plots show the comparison of the ideal function, noisy data, and t
 - **Linear Regression**: A simple linear fit to the noisy data.
 - **Polynomial Ridge Regression**: A polynomial regression with regularization, showing how different degrees and α values affect the model fit.
 
-![Linear vs Polynomial Ridge Comparison](https://via.placeholder.com/600x400)
+![Linear vs Polynomial Ridge Comparison](https://raw.githubusercontent.com/Sivamani1611/Mathematics-Driven-Machine-Learning/refs/heads/main/Ridge%20Regression/comparison_alpha_0.01.png)
