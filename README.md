@@ -12,12 +12,15 @@ Each model is organized into its own folder, which includes:
 ### Directory Layout
 
 ```
-📂 MachineLearningModels
-├── 📂 LinearRegression
+📂 Mathematics-Driven-Machine-Learning
+├── 📂 Linear Regression
 │   ├── Linear_Regression.py
 │   ├── README.md
-├── 📂 LogisticRegression
+├── 📂 Logistic Regression
 │   ├── Logistic_Regression.py
+│   ├── README.md
+├── 📂 Polynomial Regression
+│   ├── Polynomial_Regression.py
 │   ├── README.md
 ├── 📂 ... (other models)
 └── README.md (this file)
@@ -27,15 +30,20 @@ Each model is organized into its own folder, which includes:
 
 1. **Linear Regression**
     - **Description**: Demonstrates the implementation of Linear Regression using gradient descent. Includes mathematical formulas and visualizations.
-    - **Folder**: `LinearRegression`
+    - **Folder**: `Linear Regression`
     - **Documentation**: [Linear Regression README](./Linear%20Regression/README.md)
 
 2. **Logistic Regression**
     - **Description**: Implements Logistic Regression for binary classification, including the sigmoid function and loss computation.
-    - **Folder**: `LogisticRegression`
+    - **Folder**: `Logistic Regression`
     - **Documentation**: [Logistic Regression README](./Logistic%20Regression/README.md)
 
-3. **Upcoming Models**
+3. **Polynomial Regression**
+    - **Description**: Implements Polynomial Regression to fit non-linear data by extending linear regression with polynomial terms. Includes the transformation of features and visualization of the fit.
+    - **Folder**: `Polynomial Regression`
+    - **Documentation**: [Polynomial Regression README](./Polynomial%20Regression/README.md)
+
+4. **Upcoming Models**
     - Additional models such as Decision Trees, K-Nearest Neighbors, and Support Vector Machines will be added, each with its folder and documentation.
 
 ## Getting Started
