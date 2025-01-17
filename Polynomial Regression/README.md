@@ -18,10 +18,11 @@ $$
 $$
 
 Where:
-- \( \hat{y} \): Predicted value.
-- \( \beta_i \): Coefficient for the \( i \)-th term of the polynomial.
-- \( d \): Degree of the polynomial.
-
+- `ŷ`: Predicted value.
+- `βᵢ`: Coefficient for the `i`-th term of the polynomial.
+- `X`: Input feature.
+- `d`: Degree of the polynomial.
+- 
 ### 2. Cost Function: Mean Squared Error (MSE)
 The cost function minimizes the difference between predicted and actual values:
 
@@ -30,9 +31,10 @@ J(\beta) = \frac{1}{2n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \frac{\lambda}{2n} 
 $$
 
 Where:
-- \( n \): Number of data points.
-- \( \lambda \): Regularization parameter.
-- \( \beta_j^2 \): Regularization term to penalize large coefficients.
+- `n`: Number of data points.
+- `λ`: Regularization parameter.
+- `βᵢ`: Coefficients of the polynomial terms.
+- The first term is the Mean Squared Error (MSE) and the second term is the L2 regularization.
 
 ### 3. Gradient Descent Update Rule
 The coefficients are updated iteratively as follows:
@@ -42,8 +44,15 @@ $$
 $$
 
 Where:
-- \( \eta \): Learning rate.
-- \( \frac{\partial J}{\partial \beta_j} \): Gradient of the cost function with respect to \( \beta_j \).
+- `η`: Learning rate.
+- `∂J / ∂βᵢ`: Gradient of the cost function with respect to `βᵢ`.
+
+$$
+∂J / ∂βᵢ = (1 / n) Σ (yi - ŷi) * Xᵢ + (λ / n) βᵢ
+$$
+Where:
+`Xᵢ` is the `i`-th feature of the input data.
+
 
 ## Script Workflow
 
