@@ -22,7 +22,7 @@ Where:
 - `βᵢ`: Coefficient for the `i`-th term of the polynomial.
 - `X`: Input feature.
 - `d`: Degree of the polynomial.
-- 
+
 ### 2. Cost Function: Mean Squared Error (MSE)
 The cost function minimizes the difference between predicted and actual values:
 
