@@ -14,6 +14,7 @@ This repository implements an **Elastic Net Regression** model using mathematica
 
 ### 1. Elastic Net Cost Function
 The Elastic Net cost function combines the Mean Squared Error (MSE) and regularization terms:
+
 $$
 J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda_1 \sum_{j=1}^{n} |\theta_j| + \frac{\lambda_2}{2} \sum_{j=1}^{n} \theta_j^2
 $$
@@ -29,9 +30,9 @@ Where:
 ### 2. Gradient for Elastic Net
 The gradient for updating parameters during optimization includes contributions from both L1 and L2 regularization:
 
-\[
+$$
 \text{Gradient} = \frac{1}{m} X^T (h_\theta(X) - y) + \lambda_1 \cdot \text{sign}(\theta) + \lambda_2 \cdot \theta
-\]
+$$
 
 Where:
 - \( \text{sign}(\theta) \): The sign of each parameter \( \theta_j \).
@@ -75,8 +76,3 @@ Where:
 The script generates a plot showing how the cost function converges over iterations for different combinations of λ₁ and λ₂. This helps in analyzing the effect of regularization on the model's performance.
 
 ## Output
-```
-Optimal theta values: [4.8355205  2.63715634 2.05520892 1.63712866]
-Best λ1: 0.01
-Best λ2: 0.01
-```
