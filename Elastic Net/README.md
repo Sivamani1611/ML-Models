@@ -14,8 +14,9 @@ This repository implements an **Elastic Net Regression** model using mathematica
 
 ### 1. Elastic Net Cost Function
 The Elastic Net cost function combines the Mean Squared Error (MSE) and regularization terms:
-
+$$
 J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda_1 \sum_{j=1}^{n} |\theta_j| + \frac{\lambda_2}{2} \sum_{j=1}^{n} \theta_j^2
+$$
 
 Where:
 - \( m \): Number of data points.
