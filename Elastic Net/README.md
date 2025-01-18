@@ -14,9 +14,9 @@ This repository implements an **Elastic Net Regression** model using mathematica
 
 ### 1. Elastic Net Cost Function
 The Elastic Net cost function combines the Mean Squared Error (MSE) and regularization terms:
-\[
-\text{Cost} = \frac{1}{n} \sum_{i=1}^{n} (y_i - y_{\text{pred}_i})^2 + \lambda_1 \sum_{j=1}^{p} |\beta_j| + \lambda_2 \sum_{j=1}^{p} \beta_j^2
-\]
+$$
+J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda_1 \sum_{j=1}^{n} |\theta_j| + \frac{\lambda_2}{2} \sum_{j=1}^{n} \theta_j^2
+$$
 
 Where:
 - \( m \): Number of data points.
@@ -30,7 +30,7 @@ Where:
 The gradient for updating parameters during optimization includes contributions from both L1 and L2 regularization:
 
 \[
-\text{Gradient} = \frac{1}{m} X^T (h_\theta(X) - y) + λ₁ \cdot \text{sign}(\theta) + λ₂ \cdot \theta
+\text{Gradient} = \frac{1}{m} X^T (h_\theta(X) - y) + \lambda_1 \cdot \text{sign}(\theta) + \lambda_2 \cdot \theta
 \]
 
 Where:
@@ -73,11 +73,6 @@ Where:
 
 ### Cost Function Convergence
 The script generates a plot showing how the cost function converges over iterations for different combinations of λ₁ and λ₂. This helps in analyzing the effect of regularization on the model's performance.
-
-### Example Plot:
-![Elastic Net Convergence](https://placeholder.url/elastic-net-convergence.png)
-
----
 
 ## Output
 ```
