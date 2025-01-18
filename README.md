@@ -52,7 +52,7 @@ To explore the models:
 
 1. Clone this repository:
     ```bash
-    git clone [https://github.com/Sivamani1611/Mathematics-Driven-Machine-Learning.git](https://github.com/Sivamani1611/Mathematics-Driven-Machine-Learning.git)
+    git clone https://github.com/Sivamani1611/Mathematics-Driven-Machine-Learning.git
     ```
 2. Navigate to the folder of the desired model.
 3. Run the Python script:
