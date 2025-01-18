@@ -76,3 +76,8 @@ Where:
 The script generates a plot showing how the cost function converges over iterations for different combinations of λ₁ and λ₂. This helps in analyzing the effect of regularization on the model's performance.
 
 ## Output
+```
+Optimal theta values: [4.8355205  2.63715634 2.05520892 1.63712866]
+Best λ1: 0.01
+Best λ2: 0.01
+```
