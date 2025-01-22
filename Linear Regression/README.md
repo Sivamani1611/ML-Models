@@ -64,7 +64,7 @@ Where:
    - The `predict` function calculates the predicted values of `y` using the formula:
 
      
-    $`y_{\text{pred}}` = β₀ + β₁ \cdot X $
+    $`y_{\text{pred}} = β₀ + β₁ \cdot  X `$
      
 
 4. **Cost Function**:
