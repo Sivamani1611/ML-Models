@@ -62,9 +62,10 @@ Where:
 
 3. **Prediction**:
    - The `predict` function calculates the predicted values of `y` using the formula:
-     $$
-     y_{\text{pred}} = \beta_0 + \beta_1 \cdot X
-     $$
+
+     
+    $`y_{\text{pred}}`$ = β₀ + β₁ \cdot X
+     
 
 4. **Cost Function**:
    - The `compute_cost` function calculates the Mean Squared Error (MSE) between the actual values `y` and the predicted values `y_pred`.
