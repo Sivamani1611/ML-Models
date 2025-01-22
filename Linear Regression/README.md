@@ -34,7 +34,7 @@ Where:
 Where:
 - `n` is the number of data points.
 - `yᵢ` is the actual value.
-- $$`y_predᵢ`$$ is the predicted value.
+- $`y_predᵢ`$ is the predicted value.
 
 ### 3. Gradient Descent Update Rule
 The gradient descent algorithm updates the parameters \( \beta_0 \) and \( \beta_1 \) iteratively to minimize the cost function. The update rules are as follows:
