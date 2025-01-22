@@ -37,7 +37,7 @@ Where:
 - $`y_{\text{pred}_i}`$ is the predicted value.
 
 ### 3. Gradient Descent Update Rule
-The gradient descent algorithm updates the parameters \( \beta_0 \) and \( \beta_1 \) iteratively to minimize the cost function. The update rules are as follows:
+The gradient descent algorithm updates the parameters β₀ and β₁ iteratively to minimize the cost function. The update rules are as follows:
 
 $$
 \beta_0 = \beta_0 - \eta \cdot \frac{1}{n} \sum_{i=1}^{n} (y_i - y_{\text{pred}_i})
@@ -58,7 +58,7 @@ Where:
    - The script generates a synthetic dataset using `make_regression` from scikit-learn with 100 samples and 1 feature, and noise is added to make the data more realistic.
 
 2. **Initialize Parameters**:
-   - The model parameters \( \beta_0 \) (intercept) and \( \beta_1 \) (slope) are initialized to zero and one, respectively.
+   - The model parameters β₀ (intercept) and β₁ (slope) are initialized to zero and one, respectively.
 
 3. **Prediction**:
    - The `predict` function calculates the predicted values of `y` using the formula:
@@ -70,7 +70,7 @@ Where:
    - The `compute_cost` function calculates the Mean Squared Error (MSE) between the actual values `y` and the predicted values `y_pred`.
 
 5. **Gradient Descent**:
-   - The `gradient_descent` function performs one step of gradient descent. It calculates the gradients of the cost function with respect to \( \beta_0 \) and \( \beta_1 \) and updates the parameters to reduce the cost.
+   - The `gradient_descent` function performs one step of gradient descent. It calculates the gradients of the cost function with respect to β₀ and β₁ and updates the parameters to reduce the cost.
 
 6. **Model Training**:
    - The `linear_regression` function runs gradient descent for a specified number of epochs (iterations). During each epoch, the model parameters are updated, and the cost is printed every 100 epochs to monitor convergence.
