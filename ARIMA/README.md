@@ -6,9 +6,11 @@ ARIMA (AutoRegressive Integrated Moving Average) is a popular statistical method
 
 ### 1.1. AR (AutoRegressive) Process
 The autoregressive part of ARIMA is modeled as:
+$$
 \[
 X_t = \phi_1 X_{t-1} + \phi_2 X_{t-2} + \dots + \phi_p X_{t-p} + \epsilon_t
 \]
+$$
 Where:
 - \(X_t\) is the value at time \(t\).
 - \(\phi_1, \phi_2, \dots, \phi_p\) are the parameters (coefficients) of the AR model.
@@ -17,9 +19,11 @@ Where:
 
 ### 1.2. I (Integrated) Process
 The integration part is used to make the time series stationary. It involves differencing the data:
+$$
 \[
 Y_t = X_t - X_{t-1}
 \]
+$$
 Where:
 - \(Y_t\) is the differenced series.
 - \(X_t\) and \(X_{t-1}\) are the values at time \(t\) and \(t-1\), respectively.
@@ -28,9 +32,11 @@ This process is repeated \(d\) times (where \(d\) is the differencing order) unt
 
 ### 1.3. MA (Moving Average) Process
 The moving average part models the relationship between the current value and the previous error terms. The formula is:
+$$
 \[
 X_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} + \dots + \theta_q \epsilon_{t-q}
 \]
+$$
 Where:
 - \(X_t\) is the value at time \(t\).
 - \(\mu\) is the mean of the series (or the intercept term).
@@ -40,9 +46,11 @@ Where:
 
 ### 1.4. ARIMA Model Formula
 Combining the three components, the ARIMA model is defined as:
+$$
 \[
 (1 - \phi_1 B - \phi_2 B^2 - \dots - \phi_p B^p)(1 - B)^d X_t = \epsilon_t + \theta_1 B \epsilon_{t-1} + \theta_2 B \epsilon_{t-2} + \dots + \theta_q B \epsilon_{t-q}
 \]
+$$
 Where:
 - \(B\) is the backshift operator: \(B X_t = X_{t-1}\).
 - \(d\) is the order of differencing.
