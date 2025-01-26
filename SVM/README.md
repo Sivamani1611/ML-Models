@@ -1,4 +1,4 @@
-# Support Vector Machine (SVM) from Scratch
+# Support Vector Machine (SVM)
 
 This repository implements a **Support Vector Machine (SVM)** classifier from scratch using **NumPy** for mathematical computations and **Matplotlib** for visualization. The model is trained using a hinge-loss-based optimization to separate two classes while maximizing the margin.
 
