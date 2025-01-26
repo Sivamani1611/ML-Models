@@ -69,3 +69,11 @@ Where:
 - **Pandas**: For handling the data.
 - **Matplotlib**: For plotting the results.
 - **Scikit-learn**: For data preprocessing, PCA implementation, and dataset loading.
+
+
+
+## Output
+
+- **Cumulative Explained Variance Plot**: Displays how much variance is explained by each additional principal component.
+- **2D PCA Projection Plot**: Shows a 2D scatter plot of the dataset after projection onto the first two principal components.
+- **3D PCA Projection Plot**: Shows a 3D scatter plot of the dataset after projection onto the first three principal components.
