@@ -83,21 +83,4 @@ Where:
 | `C`               | Regularization parameter                       | `1`           |
 | `epochs`          | Number of iterations for gradient descent      | `1000`        |
 
-## Visualization
-The plots show the decision boundary and margins after training. Example:
 
-![SVM Decision Boundary](https://via.placeholder.com/600x400)
-
-## Example Output
-
-```bash
-Epoch 0, Loss: 32.443, w: [ 0.075 -0.123], b: -0.294
-Epoch 100, Loss: 1.210, w: [ 0.365 -0.493], b: 0.097
-Epoch 200, Loss: 1.023, w: [ 0.463 -0.592], b: 0.251
-Epoch 300, Loss: 0.909, w: [ 0.508 -0.642], b: 0.339
-Epoch 400, Loss: 0.843, w: [ 0.528 -0.672], b: 0.398
-Epoch 500, Loss: 0.816, w: [ 0.536 -0.683], b: 0.428
-
-Trained Coefficients:
- w = [ 0.536 -0.683]
- b = 0.428
