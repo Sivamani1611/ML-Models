@@ -1,4 +1,4 @@
-# K-means Clustering from Scratch
+# K-means Clustering
 
 This repository implements a **K-means clustering** algorithm from scratch using **NumPy** for mathematical computations and **Matplotlib** for visualization. The model is trained to partition a dataset into `K` clusters by minimizing the within-cluster variance and iteratively updating the cluster centroids.
 
